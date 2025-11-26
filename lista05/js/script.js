@@ -93,6 +93,17 @@ exercicio07.addEventListener("click", () => {
 })
 
 exercicio08.addEventListener("click", () => {
+    res.innerHTML = ""
+    let numero1 = 0
+    let numero2 = 1
+    res.innerHTML += `${numero1} - ${numero2}`
+
+    for (let contadora = 0; contadora < 8; contadora++) {
+        let soma = numero1 + numero2
+        res.innerHTML += ` - ${soma}`
+        numero1 = numero2
+        numero2 = soma
+    }
     // 8) Escreva um programa que mostre a sequência de Fibonacci até o décimo termo.
 })
 
